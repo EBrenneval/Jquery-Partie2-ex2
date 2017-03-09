@@ -8,9 +8,11 @@
   <body>
       <img src="img/image.jpg" id="image" />
       <script>
-      $("#image").dblclick(function(){
-        $("#image").css("width","500px")
+      $(document).ready(function(){
+      $("#image").dblclick(function(){     // declaration de l'id,
+        $(this).width("500px")   // changement du css , le "this" cible l'img . 
       });
+    })
       </script>
   </body>
 </html>
